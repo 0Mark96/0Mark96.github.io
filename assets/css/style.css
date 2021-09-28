@@ -3,19 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div,
+h1, h2, h3, h4, h5, h6, p, center, ol, ul, li,
+form, label, legend, article, aside, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,8 +15,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, figure, 
+footer, header, menu, nav, section {
 	display: block;
 }
 body {
@@ -34,18 +25,8 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/*end*/
+
 @font-face {
   font-family: 'font';
   src: url('../fonts/secrcode.woff') format('woff');
@@ -54,6 +35,7 @@ table {
 body {
   font-family: 'font';
   color: snow;
+  background-color: black;
 }
 .page {
     display: flex;
@@ -165,9 +147,10 @@ section,footer {
     margin-left: 100px;
   }
   .home h1 {
-    margin-left: -40px;
+    margin-left: -33px;
     margin-top: -10px;
-   font-size: 44px;
+   font-size: 47px;
+   padding-right: 30px;
   }
   .home p {
     box-shadow: 0px 0px 7px rgb(22, 246, 246),
@@ -297,12 +280,13 @@ section,footer {
  .softSkills {
    
    width: 59%;
-   height: 200px;
+   height: auto;
    box-shadow: 5px 3px 10px rgb(22, 246, 246),
    3px 3px 3px rgb(22, 246, 246);
    margin-top: 60px;
    margin-bottom: 100px;
-   padding: 10px;
+   padding: 20px;
+   text-align: center;
  }
   .pSoftSkills { 
    display: flex;
@@ -317,6 +301,7 @@ section,footer {
    font-size: 20px;
    justify-content: space-around;
    line-height: 1.8;
+
   }
   footer h3 {
      margin: 80px 0;
